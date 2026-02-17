@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Media Queries</title>
+    <style>
+        .box {
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(4, 255, 0);
+        }
+        @media screen and (min-width:250px)
+        and (max-width: 300px) {
+            .box {
+                border-radius: 50%;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

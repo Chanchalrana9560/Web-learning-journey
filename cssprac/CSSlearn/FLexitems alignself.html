@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Direction</title>
+   <style>
+       * {
+   margin: 0;
+   padding: 0;
+}
+.box {
+   height: 150px;
+   width: 150px;
+   border: 3px solid black;
+   margin-right: 5px;
+}
+#heading {margin-left: 200px;}
+#container {
+   height: 500px;
+   width: 500px;
+   padding: 10px;
+   margin: 20px;
+   border: 3px solid black;
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+  align-items: starts;
+}
+#box1 {background-color: blue;}
+#box2 {background-color: rgb(255, 174, 0);}
+#box4 {background-color: rgb(17, 42, 2);}
+#box3 {
+    background-color: rgb(255, 0, 170);
+    align-self: center;  
+}
+
+   </style>
+</head>
+<body>
+    <h1 id="heading">Flex Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex Item 1</div>
+        <div id="box2" class="box">Flex Item 2</div>
+        <div id="box4" class="box">Flex Item 4</div>
+        <div id="box3" class="box">Flex Item 3</div>
+    </div>
+</body>
+</html>

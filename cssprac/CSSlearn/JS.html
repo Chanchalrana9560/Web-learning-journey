@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Temperature Conversion</title>
+</head>
+<body>
+    <script>
+        function convertTemp() {
+        let type = document.getElementById("tempValue").value;
+        if(type== 'c') {
+            let celsius = document.getElementById("tempValue").value;
+            let convertedTempInFahrenheit = (celsius * 9/5) + 32;
+
+            document.getElementById("output").innerHTML = "<p> The converted temperature in Fahrenheit is + convertedTempInFahrenheit = </p>";
+        }
+        else if(type == 'f') {
+            let Fahrenheit = document.getElementById("tempValue").value;
+            let convertedTempInCelsius = (Fahrenheit = 32) *5/9;
+
+            document.getElementById("output").innerHTML = "<p> The converted temperature in Celsius is +convertedTempCelsius + </p>";
+        }
+        }
+    </script>
+
+    <h1>Simple Temperature Converter</h1>
+    <span>Enter the temperature value</span>
+    <input type="number" name="temp" id="tempValue">
+    <br>
+    <br>
+    <span>Enter 'c' for Celsius, or 'f' for Fahrenheit</span>
+    <input type="text" name="type" i="tempValue">
+
+    <button on click='convertTemp()'>Click to convert </button>
+    <div id='output'></div>
+</body>
+</html>
