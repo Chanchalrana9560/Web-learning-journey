@@ -1,0 +1,1 @@
+This repository showcases my frontend development learning journey including HTML, CSS, and JavaScript exercises, practice files, and small projects to improve my web development skills.Beginner-level frontend practice projects using HTML, CSS, and JavaScript.
